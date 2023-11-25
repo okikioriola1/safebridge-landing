@@ -32,3 +32,18 @@ menuBarIcon.addEventListener('click', function () {
 closeIcon.addEventListener('click', function () {
   mobileNavElements.classList.remove('active');
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const buyerBtn = document.getElementById('buyerBtn');
+  const sellerBtn = document.getElementById('sellerBtn');
+
+  buyerBtn.addEventListener('click', function () {
+    buyerBtn.classList.add('active');
+    sellerBtn.classList.remove('active');
+  });
+
+  sellerBtn.addEventListener('click', function () {
+    sellerBtn.classList.add('active');
+    buyerBtn.classList.remove('active');
+  });
+});

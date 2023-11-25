@@ -200,6 +200,10 @@
                 background:  #EDF1F9;
                 display: flex;
                 padding: 0 1rem;
+                margin-left: -40%;
+                @include media ("<=mobile"){
+                    margin-left:0 ;
+                }
                 &__wrapper{
                 .switch-btn{
                     color:  rgba(23, 27, 32, 0.32);
@@ -224,6 +228,7 @@
                     line-height: normal;
                     padding: 1rem 1rem;
                     border-radius: 99px;
+                    transition: all ease .3s;
                  
                 }
             }
@@ -260,6 +265,9 @@
                             counter-increment: list;
                             padding-left: 2.5rem;
                             padding-bottom: 0.6rem;
+                            @include media ("<=mobile"){
+                                padding-left: 3rem;
+                            }
                             &:before {
                                 content: "";
                                 position: absolute;
@@ -268,6 +276,9 @@
                                 height: 70%;
                                 width: 3px;
                                 border-left: 3px solid #112DA5;
+                                @include media ("<=mobile"){
+                                    left: 0.8rem;
+                                }
                               }
                               &:after {
                                 content: counter(list);
@@ -284,6 +295,9 @@
                                 line-height: 2rem;
                                 text-align: center;
                                 border: 1px solid #112DA5;
+                                @include media ("<=mobile"){
+                                    left: -0.5rem;
+                                }
                               }
                               &:last-child {
                                 &:before {
