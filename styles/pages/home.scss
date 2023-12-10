@@ -7,7 +7,8 @@
     url("/assets/images/home-hero-bg.jpg");
 
   // background-image: url("/assets/images/home-hero-bg.jpg");
-  height: 960px;
+  height: 90vh;
+  //change made to the height above
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +19,12 @@
         rgba(23, 27, 32, 0) 100%
       ),
       url("/assets/images/mobile-hero-bg.png");
-  }
+      height: 800px;
+    }
+    @include media("<=phone") {
+        height: 500px;
+
+    }
   &__wrapper {
     height: 100%;
     // padding: 10rem 0;
@@ -60,9 +66,14 @@
         margin: 2rem 0;
 
         @include media("<=mobile") {
-          font-size: 32px;
-          line-height: 48px;
+          font-size: 18px;
+          line-height: 32px;
         }
+        @include media("<=phone") {
+          font-size: 16px;
+          line-height: 28px;
+        }
+        //added font-size for mobile screen
       }
     }
     .hero-btn {
@@ -243,19 +254,7 @@
             transition: all ease 0.3s;
           }
 
-          //   .active {
-          //     color: #171b20;
-          //     background: #fff;
-          //     // border: 8px solid #edf1f9;
-          //     font-family: "Montserrat";
-          //     font-size: 20px;
-          //     font-style: normal;
-          //     font-weight: 500;
-          //     line-height: normal;
-          //     padding: 1rem 1rem;
-          //     border-radius: 99px;
-          //     transition: all ease 0.3s;
-          //   }
+
         }
       }
 
@@ -355,6 +354,10 @@
       display: flex;
       justify-content: flex-end;
       img {
+        @include media("<=mac") {
+            width: 93%;
+            height: auto;
+          }
         @include media("<=md") {
           width: 90%;
           height: auto;
@@ -429,6 +432,19 @@
             gap: 0.5rem;
             padding: 1rem 0;
             align-items: center;
+            p {
+              color: rgba(23, 27, 32, 0.64);
+              font-family: "Montserrat";
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 32px;
+              @include media("<=tablet") {
+                font-size: 16px;
+                line-height: 28px;
+              }
+            }
+            //added font for the p tag above
           }
         }
       }

@@ -55,6 +55,10 @@ html {
           font-weight: 500;
           line-height: normal;
           text-decoration: none;
+
+        }
+        .nav-active{
+          font-weight: 700;
         }
       }
     }
@@ -336,6 +340,8 @@ html {
             padding: 6rem 0;
             @include media ("<=mobile"){
                 flex-wrap: wrap;
+                justify-content: flex-start;
+                //changed the justify for the footer link
 
             }
         }
@@ -346,6 +352,10 @@ html {
                 justify-content: center;
                 @include media ("<=mobile"){
                     flex-wrap: wrap;
+                    justify-content: flex-start;
+                    gap: 1rem;
+
+                    //changed the justify for the footer link
     
                 }
 
