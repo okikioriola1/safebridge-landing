@@ -8,7 +8,7 @@
 
   // background-image: url("/assets/images/home-hero-bg.jpg");
   height: 90vh;
-  //change made to the height above
+  //change made to the height above (Done)
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,12 +19,11 @@
         rgba(23, 27, 32, 0) 100%
       ),
       url("/assets/images/mobile-hero-bg.png");
-      height: 800px;
-    }
-    @include media("<=phone") {
-        height: 500px;
-
-    }
+    height: 800px;
+  }
+  @include media("<=phone") {
+    height: 500px;
+  }
   &__wrapper {
     height: 100%;
     // padding: 10rem 0;
@@ -73,7 +72,7 @@
           font-size: 16px;
           line-height: 28px;
         }
-        //added font-size for mobile screen
+        //added font-size for mobile screen (Done)
       }
     }
     .hero-btn {
@@ -253,8 +252,6 @@
             border-radius: 99px;
             transition: all ease 0.3s;
           }
-
-
         }
       }
 
@@ -355,9 +352,9 @@
       justify-content: flex-end;
       img {
         @include media("<=mac") {
-            width: 93%;
-            height: auto;
-          }
+          width: 93%;
+          height: auto;
+        }
         @include media("<=md") {
           width: 90%;
           height: auto;
@@ -444,7 +441,7 @@
                 line-height: 28px;
               }
             }
-            //added font for the p tag above
+            //added font for the p tag above (Done)
           }
         }
       }
